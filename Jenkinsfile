@@ -21,8 +21,7 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                sh 'export MAVEN_HOME=/opt/apache-maven-3.9.6/bin'
-                sh './jenkins/scripts/deliver.sh' 
+                sh 'export MAVEN_HOME=/opt/apache-maven-3.9.6/bin;./jenkins/scripts/deliver.sh' 
             }
         }
     }
